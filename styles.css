@@ -1,0 +1,108 @@
+/* Importer la police depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Style global */
+body {
+    font-family: 'Poppins', sans-serif; /* Police uniforme */
+    background-color: #fdfdfd;
+    color: #333;
+    font-size: 16px; /* Taille moyenne du texte */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* En-tête */
+header {
+    background-color: #f9c0d3;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #e0a1c8;
+}
+
+/* Titre principal – Bien mis en valeur */
+h1 {
+    font-size: 2.8em;
+    color: #ff1493; /* Rose flashy pour que ça pète 👀 */
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #e0a1c8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #f9e5e8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur galerie pour aligner les images en ligne */
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Images (même taille, en ligne, joli rendu) */
+.galerie img,
+section img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+
+.galerie-centree {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  /* Espace entre les images */
+    margin-top: 20px;  /* Espacement au-dessus */
+}
+
+.galerie-centree img {
+    max-width: 100%;  /* Assure que les images ne dépassent pas le conteneur */
+    height: auto;     /* Garde les proportions de l'image */
+    border-radius: 8px;  /* Optionnel : arrondir les bords des images */
+}
+
+/* Footer */
+footer {
+    background-color: #f9c0d3;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Liens dans le texte */
+section a {
+    color: #d43f7f;
+    text-decoration: underline;
+}
+
+section a:hover {
+    color: #b52a5f;
+}
